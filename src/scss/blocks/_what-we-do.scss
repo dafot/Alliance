@@ -1,0 +1,53 @@
+.what-we-do {
+  padding: 80px 0 100px 0;
+  background: var(--page-bg);
+  // .what-we-do__container
+  @include tablet {
+      padding: 32px 0 40px;
+  }
+  &__container {
+  }
+
+  // .what-we-do__title
+
+  &__title {
+    text-align: center;
+    width: calc(100% / 12 * 6);
+    margin: 0 auto;
+    margin-bottom: 40px;
+    
+    @include tablet {
+        width: 100%;
+    }
+  }
+
+  &__main-title {
+    margin-bottom: 15px;
+  }
+
+  &__title-descr {
+    max-width: 442px;
+    margin: 0 auto;
+    font-size: clamp(0.875rem, 0.835rem + 0.2vw, 1rem);
+  }
+
+  // .what-we-do__services
+
+  &__slider {
+    height: 0;    
+    @include tablet {
+      height: 100%;
+    }
+  }
+  &__services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(429px, 1fr));
+    gap: 16px;
+    @include tablet {
+        display: none;
+    }
+  }
+}
+.swiper-pagination-bullet-active{
+  background: var(--second-accent)!important;
+}

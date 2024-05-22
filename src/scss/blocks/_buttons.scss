@@ -1,0 +1,36 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  padding: 16px 20px;
+  width: 135px;
+  height: 51px;
+  color: var(--button-static-text-color);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.button_blue {
+  transition: all 0.2s;
+  background: var(--accent);
+}
+.button_orange {
+  transition: all 0.2s;
+  background: var(--second-accent);
+}
+// hover settings
+@media (any-hover: hover) {
+  .button_blue:hover {
+    background: var(--page-bg);
+    color: var(--accent);
+    outline: 1px solid var(--accent);
+  }
+  .button_orange:hover {
+    background: var(--page-bg);
+    color: var(--text-color);
+    outline: 1px solid var(--second-accent);
+  }
+}

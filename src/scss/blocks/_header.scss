@@ -1,0 +1,93 @@
+.header {
+  background: var(--page-bg);
+  padding: 24px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0fulp;
+  z-index: 60;
+  width: 100%;
+  border-bottom: 1px solid #000;
+  @include mobile {
+      padding: 16px 0;
+  }
+
+  // .header__container
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // .header__logo
+
+  &__logo {
+    height: 52px;
+    min-width: 192px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  // .header__nav
+
+  &__nav {
+    @include tablet {
+        display: none;
+    }    
+  }
+
+  // .header__quoute
+
+  &__quoute {
+    display: flex;    
+    align-items: center;
+    gap: 24px;
+    &::before{
+      content: '';
+      display: block;
+      width: 1px;
+      height: 34px;
+      background: #e0e0e0;
+      @include tablet {
+        display: none;
+      }  
+    }
+  }
+
+  // .header__phone-icon
+
+  &__phone-icon {
+    transform: translateX(12px);
+    height: 18px;
+    @include tablet {
+        height: 24px;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  // .header__phone-num
+
+  &__phone-num {
+    &:link,
+    &:visited{
+      color: var(--text-color);
+    }
+    @include tablet {
+        display: none;
+    }
+  }
+
+  // .header__button
+
+  &__button {
+    @include tablet {
+        display: none;
+    }
+  }
+}

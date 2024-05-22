@@ -1,0 +1,28 @@
+.burger-menu {
+  cursor: pointer;
+  height: 17px;
+  width: 30px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;  
+  @include tablet {
+    display: flex;
+  }
+}
+.burger-line {
+  background-color: #142b35;
+  width: 30px;
+  height: 2px;
+  transition: transform .2s;
+}
+.burger-menu.active {
+  .burger-line:first-child {
+    transform: rotate(45deg) translateY(10px);
+  }
+  .burger-line:nth-child(2) {
+    display: none;
+  }
+  .burger-line:last-child {
+    transform: rotate(-45deg) translateY(-10px);
+  }
+}

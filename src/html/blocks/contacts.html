@@ -1,0 +1,108 @@
+<section class="contacts">
+  <div class="contacts__container container grid">
+    <div class="contacts__text-content" itemscope itemtype="https://schema.org/LocalBusiness">
+      <div class="contacts__title section-title">
+        <p class="contacts__slogan section-title__slogan">we are local</p>
+        <h2 class="contacts__main-title section-title__main-title">
+          We proudly serve the Chicagoland area
+        </h2>
+        <p class="section-title__descr contacts__title-descr">
+          Alliance Moving & Storage is a family-operated moving company based in
+          Rolling Meadows. Our mission is to provide professional, affordable,
+          and reliable moving
+        </p>
+      </div>
+      <ul class="contacts__list contacts-list">
+        <li class="contacts-list__item" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <img
+            class="contacts-list__icon"
+            src="./img/svg/point.svg"
+            alt="address-icon"
+          />
+          <address>
+            <span class="contacts-list__text-wrap"
+              itemprop="streetAddress">3201 TOLLVIEW DRIVE ROLLING MEADOWS, IL 60008</span
+            >
+          </address>
+        </li>
+        <li class="contacts-list__item" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <img
+            class="contacts-list__icon"
+            src="./img/svg/point.svg"
+            alt="address-icon"
+          />
+          <address>
+            <span class="contacts-list__text-wrap"
+              itemprop="streetAddress">4305 N. LINCOLN AVE CHICAGO, IL 60618</span
+            >
+          </address>
+        </li>
+        <li class="contacts-list__item">
+          <img
+            class="contacts-list__icon"
+            src="../../img/svg/phone-blue.svg"
+            alt="phone icon"
+          />
+          <a href="#" class="contacts__link" itemprop="telephone"><span class="contacts-list__text-wrap">(847) 378-49-49</span></a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="contacts__form-wrapper">
+      <form action="" id="add-form" class="contacts__form form">
+        <h3 class="form__title">get In Touch</h3>
+        <div class="form__wrapp">
+          <div class="form__field">
+            <label class="form__label" for="full-name"
+              >Full name <span>*</span></label
+            >
+            <input
+              class="form__input"
+              type="text"
+              name="full-name"
+              id="full-name"
+              data-required="true"
+            />
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="phone">Phone <span>*</span></label>
+            <input
+              class="form__input"
+              type="tel"
+              name="phone"
+              id="phone"
+              data-required="true"
+              placeholder="---_---_----"
+            />
+          </div>
+        </div>
+        <div class="form__field">
+          <label class="form__label" for="email">Email <span>*</span></label>
+          <input
+            class="form__input"
+            type="text"
+            name="email"
+            id="email"
+            data-required="true"
+            data-email="true"
+          />
+        </div>
+        <div class="form__field">
+          <label class="form__label" for="notes">Notes</label>
+          <textarea
+            class="form__input form__notes"
+            name="notes"
+            id="notes"
+          ></textarea>
+        </div>
+        <button
+          class="form__button button button_orange"
+          type="submit"
+          value="Submit"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+</section>

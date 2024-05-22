@@ -1,0 +1,31 @@
+:root {
+  --container-width: 1350px;
+  --container-padding: 15px;
+
+  --font-main: sans-serif;
+  --font-accent: "Manrope", sans-serif;
+  --font-titles: var(--font-accent);
+
+  --page-bg: #fff;
+  --section-bg: rgba(51, 81, 115, 0.04);
+  --text-color: #142b35;
+  --lighter-text-color: #738697;
+  --blog-descr-color: #5b6e76;
+  --text-light-color: #fff;
+  --service-text-color: #5b6e76;
+  --accent: #3a98b2;
+  --second-accent: #f2b91d;
+  --link-color: #2578c8;
+	--button-static-text-color: #fff;
+	--button-hover-text-color: #000;
+
+  --laptop-size: 1199px;
+  --tablet-size: 959px;
+  --mobile-size: 599px;
+	
+}
+
+.dark {
+  --page-bg: #252526;
+  --text-color: #fff;
+}

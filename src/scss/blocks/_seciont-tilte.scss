@@ -1,0 +1,39 @@
+.section-title {
+  // .section-title__slogan
+
+  &__slogan {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--lighter-text-color);
+    margin-bottom: 9px;
+  }
+
+  // .section-title__main
+
+  &__main-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 167%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: var(--text-color);
+    margin-bottom: 15px;
+    @include mobile {     
+      font-size: 24px;
+      line-height: 157%;
+      letter-spacing: -0.01em;     
+    }
+  }
+
+  // .section-title__descr
+
+  &__descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 167%;
+    color: var(--blog-descr-color);
+  }
+}

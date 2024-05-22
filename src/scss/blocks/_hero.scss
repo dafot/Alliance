@@ -1,0 +1,63 @@
+.hero {
+  background: url("../../img/hero-bg@2x.webp");
+  background-position: center;;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--text-light-color);
+  padding-top: 350px;
+  padding-bottom: 110px;   
+  position: relative;
+  @include mobile {
+      padding-top: 198px;
+      padding-bottom: 40px;
+  }
+  &::before {
+    content: '';
+    background: rgba(55, 46, 46, 0.4);
+    position: absolute;  
+    inset: 0;
+  }
+  
+  // .hero__container
+
+  &__container {
+    position: relative;
+    z-index: 10;
+    padding-left: 40px;
+  }
+
+  // .hero__content
+
+  &__content {
+    grid-column: span 6;
+    @include mobile {
+        grid-column: span 12;
+    }
+  }
+
+  // .hero__slogan
+
+  &__slogan {
+    font-weight: 600;
+    font-size: clamp(1.813rem, 1.412rem + 2vw, 3.063rem);
+    text-transform: capitalize;
+    margin-bottom: 16px;
+    border-left: 1px solid var(--second-accent);
+    padding-left: clamp(0.5rem, 0.02rem + 2.4vw, 2rem);
+    transform: translateX(-32px);
+    @include tablet {
+        padding-left: 8px;
+        transform: translateX(-8px);
+    }
+  }
+
+  // .hero__descr
+
+  &__descr {    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 167%;
+    max-width: 526px;
+  }
+
+}

@@ -1,0 +1,26 @@
+.nav {
+
+  // .nav__list
+
+  &__list {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+
+  // .nav__link
+
+  &__link {
+    transition: color .2s;
+    &:link,
+    &:visited{
+      color: var(--text-color);
+    }
+  }
+}
+//hover settings
+@media(any-hover:hover){
+  .nav__link:hover {
+    color: var(--second-accent);
+  }
+}
